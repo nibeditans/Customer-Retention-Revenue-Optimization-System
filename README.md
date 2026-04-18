@@ -13,6 +13,9 @@ Businesses often struggle with inefficient marketing spend because:
 **Goal:**   
 Identify the right customers to target in order to **maximize revenue while minimizing waste**.
 
+**Check out the article I have written on this Project:**
+- Complete Project Walkthrough: [How to Identify High-Value Customers and Maximize Revenue with Data Science?](https://nsdsda.medium.com/how-to-identify-high-value-customers-and-maximize-revenue-with-data-science-110f77446c6b)
+
 
 ## Solution Overview
 
