@@ -107,12 +107,73 @@ The dashboard focuses on decision-making:
 - Customer value is highly uneven  
 - Engagement strongly drives purchase behavior  
 - Inactivity is a strong indicator of churn  
-- Targeting high-value customers significantly improves efficiency  
+- Targeting high-value customers significantly improves efficiency
 
+----
+
+## 🤖 AI-Powered Business Insights Layer
+
+### Overview
+
+To bridge the gap between model outputs and business decision-making, I integrated a lightweight AI layer into the pipeline.
+
+While the system generates predictions (churn probability, purchase likelihood, expected revenue), business stakeholders need **clear, actionable insights**, not raw numbers.
+
+This layer translates structured model outputs into:
+
+* Key observations
+* Business interpretation
+* Actionable recommendations
+
+### Approach
+
+Instead of passing raw data, the system feeds **curated business metrics** into an LLM, including:
+
+* Customer segment churn rates
+* Targeting strategy metrics (purchase & churn probabilities)
+* Campaign performance (revenue, cost, profit)
+
+A **multi-model fallback mechanism** is implemented using OpenRouter to improve reliability. If all models fail (common with free endpoints), the system switches to a **deterministic fallback insight generator**.
+
+This ensures:
+
+* Robustness
+* Consistent output
+* No dependency on external API availability
+
+### Sample AI-Generated Insight
+
+> **Key Observations**
+>
+> * Low-value customers exhibit the highest churn (~21%)
+> * High-value customers are relatively more stable (~18%)
+> * Targeted customers show very high purchase probability (~94%)
+
+> **Business Interpretation**
+>
+> * The targeting strategy prioritizes **high conversion likelihood** rather than churn prevention
+> * This reflects a **revenue maximization approach**
+
+> **Recommended Actions**
+>
+> * Continue targeting high purchase probability customers
+> * Design separate retention campaigns for high-churn segments
+> * Monitor long-term churn impact to balance growth and retention
+
+
+### Why This Matters?
+
+Traditional ML pipelines stop at predictions. This system goes a step further by answering:
+
+> "What should the business do next?"
+
+By combining predictive modeling with AI-driven interpretation, the project simulates a real-world decision intelligence system, not just a modeling exercise.
+
+----
 
 ## Tech Stack
 
-- **Python**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+- **Python**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Requests
 - **SQL**: PostgreSQL  
 - **BI & Storytelling**: Power BI, PowerPoint
 - **Version Control**: Git & GitHub  
@@ -160,7 +221,8 @@ customer-retention-optimization/
 │   ├── feature_engineering.py
 │   ├── fix_scoring_ids.py
 │   ├── modeling.py
-│   └── optimization.py
+│   ├── optimization.py
+│   └── ai_integration.py
 │
 └── reports
     ├── crros_dashboard.pbix
