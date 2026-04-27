@@ -1,7 +1,7 @@
 /*
 # ALTER DATABASE crros_database SET search_path TO crros_schema;
 
-This is pplied automatically to every new connection to this database.
+This is applied automatically to every new connection to this database.
 */
 
 -- Ensure correct schema (session-level safety)
