@@ -255,14 +255,14 @@ This project demonstrates how data science can move beyond prediction to:
 
 ## 🤝 Connect
 
-If you found this interesting or have feedback, feel free to follow and connect!
+If you found this interesting or have feedback, feel free to start and fork the repository and follow for more such interesting projects!
 
 My Portfolio & Profiles: 
 - **[Portfolio](https://nibeditans.github.io/)**
 - **[LinkedIn](https://www.linkedin.com/in/ns-nibedita-sahu/)**
 - **[Medium](https://nsdsda.medium.com/)**
 - **[Kaggle](https://www.kaggle.com/nibeditasahu)**
-- **[Hackerrank](https://www.hackerrank.com/profile/nibeditans)**
+- **[Hugging Face](https://huggingface.co/nibeditans)**
 
 ## License
 
