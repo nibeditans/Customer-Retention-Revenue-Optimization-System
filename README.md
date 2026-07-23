@@ -255,7 +255,7 @@ This project demonstrates how data science can move beyond prediction to:
 
 ## 🤝 Connect
 
-If you found this interesting or have feedback, feel free to start and fork the repository and follow for more such interesting projects!
+If you found this project interesting or have feedback, feel free to star and fork the repository, and follow for more such insightful projects!
 
 My Portfolio & Profiles: 
 - **[Portfolio](https://nibeditans.github.io/)**
