@@ -17,13 +17,9 @@ WITH reference_date AS (
 rfm AS (
     SELECT
         t.customer_id,
-
         (r.max_date::date - MAX(t.transaction_date)::date) AS recency_days,
-
         COUNT(t.transaction_id) AS frequency,
-
         SUM(t.quantity * t.price * (1 - t.discount)) AS monetary
-
     FROM transactions t
     CROSS JOIN reference_date r
     GROUP BY t.customer_id, r.max_date
@@ -35,13 +31,9 @@ rfm AS (
 engagement AS (
     SELECT
         i.customer_id,
-
         COUNT(i.interaction_id) AS total_interactions,
-
         (r.max_date::date - MAX(i.interaction_timestamp)::date) AS last_interaction_days,
-
         COUNT(DISTINCT i.interaction_type) AS interaction_types_count
-
     FROM interactions i
     CROSS JOIN reference_date r
     GROUP BY i.customer_id, r.max_date
@@ -62,7 +54,6 @@ SELECT
     ) AS recency_days,
 
     COALESCE(r.frequency, 0) AS frequency,
-
     COALESCE(r.monetary, 0) AS monetary,
 
     COALESCE(
