@@ -2,7 +2,6 @@
 
 An end-to-end Data Science system designed to predict customer churn, estimate purchase probability, and optimize customer targeting to maximize revenue under budget constraints.
 
-
 ## Problem Statement
 
 Businesses often struggle with inefficient marketing spend because:
@@ -11,11 +10,10 @@ Businesses often struggle with inefficient marketing spend because:
 - Marketing budgets are limited  
 
 **Goal:**   
-Identify the right customers to target in order to **maximize revenue while minimizing waste**.
 
-**Check out the article I have written on this Project:**
-- Complete Project Walkthrough: [How to Identify High-Value Customers and Maximize Revenue with Data Science?](https://nsdsda.medium.com/how-to-identify-high-value-customers-and-maximize-revenue-with-data-science-110f77446c6b)
+> Identify the right customers to target in order to **maximize revenue while minimizing waste**.
 
+**Check out the complete project walkthrough I have written on this Project:** [How to Identify High-Value Customers and Maximize Revenue with Data Science?](https://nsdsda.medium.com/how-to-identify-high-value-customers-and-maximize-revenue-with-data-science-110f77446c6b)
 
 ## Solution Overview
 
@@ -25,11 +23,9 @@ This project simulates a real-world business workflow:
 3. Optimize customer targeting under budget constraints  
 4. Estimate business impact  
 
-
 ## Project Pipeline
 
-> Data Simulation → Database → SQL Analysis → Feature Engineering → Modeling → Optimization → Business Impact
-
+> Data Simulation ⇰ Database ⇰ SQL Analysis ⇰ Feature Engineering ⇰ Modeling ⇰ Optimization ⇰ Business Impact
 
 ## Data Design
 
@@ -60,11 +56,8 @@ Key features include:
 
 Two predictive models were built:
 
-### 1. Churn Prediction
-- Identifies customers at risk of leaving
-
-### 2. Purchase Probability
-- Estimates likelihood of future purchase
+1. Churn Prediction: Identifies customers at risk of leaving
+2. Purchase Probability: Estimates likelihood of future purchase
 
 Models used:
 - Logistic Regression  
@@ -92,7 +85,8 @@ Customers were ranked based on expected value:
 | Net Profit | ₹16.61M |
 
 **Insight:**   
-A small subset of customers drives the majority of revenue.
+
+> A small subset of customers drives the majority of revenue.
 
 ## Dashboard
 
@@ -100,7 +94,6 @@ The dashboard focuses on decision-making:
 - KPI summary (Revenue, Profit, Targets)
 - Customer segment distribution
 - Targeting strategy visualization (risk vs opportunity)
-
 
 ## Key Insights
 
@@ -231,9 +224,6 @@ customer-retention-optimization/
     └── crros_presentation_static.pdf
 ```
 
-
----
-
 ## How to Run?
 
 1. Clone the repository  
@@ -244,7 +234,6 @@ customer-retention-optimization/
 6. Run optimization script  
 7. Visualize results in Power BI  
 
-
 ## Conclusion
 
 This project demonstrates how data science can move beyond prediction to:
@@ -252,10 +241,9 @@ This project demonstrates how data science can move beyond prediction to:
 - Optimize resource allocation  
 - Drive measurable business impact  
 
-
 ## 🤝 Connect
 
-If you found this project interesting or have feedback, feel free to star and fork the repository, and follow for more such insightful projects!
+If you found this project interesting and have feedback, feel free to star and fork the repository, and follow for more such insightful projects!
 
 My Portfolio & Profiles: 
 - **[Portfolio](https://nibeditans.github.io/)**
@@ -266,4 +254,4 @@ My Portfolio & Profiles:
 
 ## License
 
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
